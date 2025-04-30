@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+    <!--=============== BOXICONS ===============-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+
+    <title>Responsive real state website - Bedimcode</title>
+
+    <style>
+        .data__container,.data{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-bottom: 40px;
+
+        }
+
+        .popular__card img{
+            height: 230px;
+            width: 100% ;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="index.html" class="nav__logo">
+                Real Estate<i class='bx bxs-home-alt-2'></i>
+            </a>
+            <div class="nav__menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link active-link">
+                            <i class='bx bx-home-alt-2'></i>
+                            <span>
+                                Home
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#popular" class="nav__link">
+                            <i class='bx bx-building-house'></i>
+                            <span>
+                                Residences
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#value" class="nav__link">
+                            <i class='bx bx-award'></i>
+                            <span>
+                                Value
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">
+                            <i class='bx bx-phone'></i>
+                            <span>
+                                Contact
+                            </span>
+                        </a>
+                    </li>
+                    <!-- <li> -->
+                    <!-- Theme change button -->
+                    <!-- <i class='bx bx-moon change--theme' id="theme-button"></i>
+                    </li> -->
+
+
+
+                    <li class="nav__item">
+                        <a href="sitevisit.html" class="nav__link">
+                            <span>
+                                Site Visit
+                            </span>
+                        </a>
+                    </li> 
+
+                
+                </ul>
+            </div>
+            <br>
+
+            <!-- <a href="#" class="button nav__button">
+                    Subscribe
+                </a> -->
+        </nav>
+    </header>
+
+    <!-- data -->
+
+    <!-- <section class="data">
+        <div class="data__img">
+            <img src="assets/img/popular1.jpg" alt="" class="data__image">
+        </div>
+
+        <div>
+
+        </div>
+
+
+    </section> -->
+
+    <section class="popular section" id="popular">
+        <div class="container">
+            <span class="section__subtitle">Best Choice</span>
+                <h2 class="section__title">
+                    Royal Orchid Residency<span>.</span>
+                </h2>
+
+            <div class="popular__container swiper">
+                <div class="swiper-wrapper">
+                    <article class="popular__card swiper-slide">
+                        <img src="assets/img/royal1.jpg" alt="" class="popular__img">
+                    </article>
+
+                    <article class="popular__card swiper-slide">
+                        <img src="assets/img/royal2.jpeg" alt="" class="popular__img">
+                    </article>
+
+                    <article class="popular__card swiper-slide">
+                        <img src="assets/img/royal3.png" alt="" class="popular__img">
+                    </article>
+
+                    <article class="popular__card swiper-slide">
+                        <img src="assets/img/royal1.jpg" alt="" class="popular__img">
+                    </article>
+
+                    
+                </div>
+
+                <div class="swiper-button-next">
+                    <i class='bx bx-chevron-right'></i>
+                </div>
+                <div class="swiper-button-prev">
+                    <i class='bx bx-chevron-left'></i>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ================ DATA ================= -->
+
+    <section class="section">
+   
+        <div class="container grid">
+
+            <div class="data">
+                <div><h2>price
+                </h2>
+                <p>₹56000</p></div>
+
+                <h2>3BHK & 4BHK</h2>
+
+            </div>
+            <div style="margin-bottom: 40px;">
+                <h2>project description</h2>
+                <p>A modern flat featuring spacious rooms, large windows allowing for plenty of natural light, and contemporary finishes. It includes an open-plan living and dining area, a fully equipped kitchen, one or more bedrooms with built-in storage, and a stylish bathroom. The flat is located in a desirable neighborhood with easy access to shops, transport, and amenities. Perfect for those seeking convenience and comfort.</p>
+            </div>
+
+
+            <h2>20+ AMENITIES...</h2>
+            <div class="data__container">
+                <div>
+                    <img src="assets/img/amineties.png" alt="">
+                </div>
+            </div>
+
+            
+        </div>
+        
+        
+    </section>
+    
+ 
+    <!--==================== FOOTER ====================-->
+    <footer class="footer section">
+        <div class="footer__container container grid">
+            <div>
+                <a href="#" class="footer__logo">
+                    Real Estate<i class='bx bxs-home-alt-2'></i>
+                </a>
+                <p class="footer__description">
+                    Our vision is to make all people <br>
+                    the best place to live for them.</p>
+            </div>
+            <div class="footer__content">
+                <div>
+                    <h3 class="footer__title">About</h3>
+                    <ul class="footer__links">
+                        <li>
+                            <a href="#home" class="footer__link">Home</a>
+                        </li>
+
+                        <li>
+                            <a href="#popular" class="footer__link">Residences</a>
+                        </li>
+
+                        <li>
+                            <a href="#value" class="footer__link">Value</a>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="footer__title">Contact Us</h3>
+                    <ul class="footer__links">
+                        <li>
+                            <p>Email: <a href="mailto:Ridex@Book.com">RealEstate@gmail.com</a></p>
+                            <p>Phone: <a href="#">+91 83204587444</a></p>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="footer__title">Support</h3>
+                    <ul class="footer__links">
+                        <li>
+                            <a href="faq.html" class="footer__link">FAQs</a>
+                        </li>
+
+                        <li>
+                            <a href="help-support.html" class="footer__link">Support center</a>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="footer__title">Follow us</h3>
+                    <ul class="footer__social">
+                        <a href="https://www.facebook.com/" target="_blank" class="footer__social--link">
+                            <i class='bx bxl-facebook-circle'></i>
+                        </a>
+                        <a href="https://www.instagram.com/" target="_blank" class="footer__social--link">
+                            <i class='bx bxl-instagram-alt'></i>
+                        </a>
+                        <a href="https://www.pinterest.com/" target="_blank" class="footer__social--link">
+                            <i class='bx bxl-pinterest'></i>
+                        </a>
+
+                        <a href="https://www.youtube.com/" target="_blank" class="footer__social--link">
+                            <i class='bx bxl-youtube'></i>
+                        </a>
+
+                        <a href="https://www.twitter.com/" target="_blank" class="footer__social--link">
+                            <i class='bx bxl-twitter'></i>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer__info container">
+            <span class="footer__copy">
+                &#169;All rigths reserved
+            </span>
+
+            <div class="footer__privacy">
+                <a href="#">Terms & Agreements</a>
+                <a href="#">Privacy Policy</a>
+            </div>
+        </div>
+
+    </footer>
+
+
+    <!--========== SCROLL UP ==========-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class='bx bxs-chevrons-up'></i>
+    </a>
+
+
+
+
+    <!--=============== SCROLLREVEAL ===============-->
+    <script src=""></script>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

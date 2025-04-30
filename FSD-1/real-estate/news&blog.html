@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News & Blog - Real Estate</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 50px auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            position: relative;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .blog-post {
+            margin-bottom: 30px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 20px;
+        }
+
+        .blog-post h4 {
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+
+        .blog-post p {
+            color: #555;
+        }
+
+        .hidden-description {
+            display: none;
+            margin-top: 10px;
+            color: #333;
+        }
+
+        .home-button {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background-color: #007bff;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .home-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <a href="index.html" class="home-button">Home</a>
+        <h1 class="section-title">Real Estate News & Blog</h1>
+        <div class="blog-post">
+            <h4>Latest Trends in the Real Estate Market</h4>
+            <p>Stay updated with the latest developments and insights into the real estate industry.</p>
+            <button class="btn btn-primary" onclick="toggleDescription('desc1')">Read More</button>
+            <p id="desc1" class="hidden-description">From emerging trends in urban development to shifts in buyer
+                preferences, our in-depth analysis covers all aspects of the market. Discover expert opinions,
+                statistical data, and future projections to make informed real estate decisions.</p>
+        </div>
+        <div class="blog-post">
+            <h4>Tips for First-Time Home Buyers</h4>
+            <p>Essential advice and strategies for making your first home purchase a success.</p>
+            <button class="btn btn-primary" onclick="toggleDescription('desc2')">Read More</button>
+            <p id="desc2" class="hidden-description">Learn about mortgage options, budgeting tips, and key factors to
+                consider when choosing a property. Understand the importance of location, home inspections, and
+                long-term investment potential to ensure a smooth buying process.</p>
+        </div>
+        <div class="blog-post">
+            <h4>Understanding Property Investment</h4>
+            <p>Learn how to make smart investment decisions in the real estate market.</p>
+            <button class="btn btn-primary" onclick="toggleDescription('desc3')">Read More</button>
+            <p id="desc3" class="hidden-description">Whether you're looking for rental income or long-term appreciation,
+                our guide provides insights into market trends, financing strategies, and risk management. Explore
+                different types of real estate investments and discover how to maximize your returns.</p>
+        </div>
+    </div>
+
+    <script>
+        function toggleDescription(id) {
+            var desc = document.getElementById(id);
+            if (desc.style.display === "none" || desc.style.display === "") {
+                desc.style.display = "block";
+            } else {
+                desc.style.display = "none";
+            }
+        }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

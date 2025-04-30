@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule A Site Visit</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(108, 106, 104);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background: black;
+            padding: 20px;
+            border-radius: 10px;
+            width: 350px;
+            text-align: center;
+            color: white;
+        }
+
+        .container h2 {
+            margin-bottom: 10px;
+        }
+
+        input {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            background: #fff;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            color: black;
+            background-color: #fff;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background-color: gray;
+        }
+
+        .info {
+            font-size: 1rem;
+            background: white;
+            color: black;
+            padding: 10px;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+        }
+
+        .visit {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            /* margin: 30px; */
+        }
+
+        .img__container {
+            margin: 30px;
+        }
+
+        .img {
+            height: 400px;
+            width: 400px;
+            border-radius: 20px;
+        }
+
+        .contact-container {
+            display: flex;
+            align-items: center;
+            /* Aligns phone number and button vertically */
+            justify-content: center;
+            /* Centers the content */
+            gap: 1rem;
+            /* Adds spacing between phone number and button */
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+    <section class="visit">
+        <div class="img__container">
+            <img src="assets/img/image1.jpg" alt="" class="img">
+        </div>
+
+        <div class="container">
+            <h2>Schedule A Site Visit</h2>
+            <p>Please fill out the form below, our expert will get back to you soon.</p>
+            <input type="text" placeholder="Your Full Name">
+            <input type="email" placeholder="Email Address">
+            <input type="tel" placeholder="Phone/Mobile">
+            <div class="contact-container">
+                <div class="info">📞 +91-6364884021</div>
+                <button class="btn" onclick="window.location.href='index.html'">HOME</button>
+            </div>
+
+
+        </div>
+
+    </section>
+
+</body>
+
+</html>
